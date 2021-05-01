@@ -1,0 +1,140 @@
+#nav_bar {
+  background: grey;
+  height: 50px;
+}
+
+#header {
+  background: rgb(172, 170, 170);
+  height: 240px;
+}
+
+#tiles {
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-gap: 10px;
+  margin-bottom: 100px;
+  grid-template-areas:
+    "tile1 tile1 tile1 tile1 tile2 tile2 tile3 tile3"
+    "tile1 tile1 tile1 tile1 tile2 tile2 tile3 tile3"
+    "tile1 tile1 tile1 tile1 tile5 tile5 tile5 tile5"
+    "tile4 tile4 tile4 tile4 tile5 tile5 tile5 tile5"
+    "tile4 tile4 tile4 tile4 tile5 tile5 tile5 tile5"
+}
+
+#tile1 {
+  grid-area: tile1;
+  background: rgb(189, 119, 119);
+  height: 100%;
+}
+
+#tile2 {
+  grid-area: tile2;
+  background: rgb(194, 50, 50);
+  height: 100%;
+}
+
+#tile3 {
+  grid-area: tile3;
+  background: rgb(119, 78, 78);
+  height: 100%;
+}
+
+#tile4 {
+  grid-area: tile4;
+  background: rgb(119, 60, 60);
+  height: 100%;
+}
+
+#tile5 {
+  grid-area: tile5;
+  background: rgb(110, 58, 58);
+  height: 100%;
+}
+
+#popular {
+  background-color: grey;
+  height: 350px;
+}
+
+#popular_headline {
+  background-color: rgb(108, 185, 147);
+  height: 175px;
+}
+
+#popular_tiles {
+  background-color: rgb(96, 100, 148);
+  height: 175px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#populartile1 {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(196, 181, 181);
+}
+
+#populartile2 {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(207, 107, 107);
+}
+
+#populartile3 {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(123, 194, 123);
+}
+
+#populartile4 {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(116, 133, 189);
+}
+
+#populartile5 {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(137, 97, 141);
+}
+
+#latest {
+  height: 1005px;
+  background-color: grey;
+}
+
+#latest_headline {
+  height: 104px;
+  background-color:rgb(172, 170, 170);
+}
+
+#latesttiles {
+  height: 100%;
+  background-color: blue;
+  display: grid;
+}
+
+#latesttile1 {
+
+}
+
+#latesttile1 {
+  
+}
+#latesttile1 {
+  
+}
+#latesttile1 {
+  
+}
+#latesttile1 {
+  
+}
+#latesttile1 {
+  
+}
+#latesttile1 {
+  
+}

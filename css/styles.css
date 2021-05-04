@@ -14,7 +14,7 @@
   grid-template-columns: repeat(8,1fr);
   grid-template-rows: repeat(5,1fr);
   grid-gap: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   grid-template-areas:
     "tile1 tile1 tile1 tile1 tile2 tile2 tile3 tile3"
     "tile1 tile1 tile1 tile1 tile2 tile2 tile3 tile3"
@@ -101,14 +101,13 @@
 }
 
 #latest {
-  height: 1005px;
+  height: 1001px;
   background-color: grey;
 }
 
 #latest_headline {
   height: 208px;
   background-color:rgb(172, 170, 170);
-
 }
 
 #latesttiles {
@@ -117,11 +116,12 @@
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 70px 1fr 1fr 1fr 1fr 70px;
-  grid-template-rows: 50px 250px 250px;
+  grid-template-rows: 50px 250px 250px 1fr;
   grid-template-areas:
   ". . . . . ."
   ". tile1 tile2 tile3 tile4 ."
-  ". tile5 tile6 tile7 tile8 .";
+  ". tile5 tile6 tile7 tile8 ."
+  ". . button button . .";
 }
 
 #latesttile1 {
@@ -171,3 +171,187 @@
   height: 250px;
   background-color: rgb(156, 106, 145);
 }
+
+#latest_button {
+  grid-area: button;
+  height: 40px;
+  width: 150px;
+}
+
+#channels {
+  height: 576px;
+  background-color: rgb(83, 172, 61);
+}
+
+#channel_header {
+  height: 208px;
+  background-color: rgb(197, 100, 100);
+}
+
+#channeltiles {
+  height: 375px;
+  background-color: rgb(140, 159, 196);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+
+}
+
+
+#channeltile1 {
+  height: 232px;
+  width: 259px;
+  background-color:rgb(214, 74, 18);
+}
+
+#channeltile2 {
+  height: 232px;
+  width: 259px;
+  background-color:rgb(148, 212, 132);
+}
+
+#channeltile3 {
+  height: 232px;
+  width: 259px;
+  background-color:rgb(99, 94, 117);
+}
+
+#channeltile4 {
+  height: 232px;
+  width: 259px;
+  background-color:rgb(177, 136, 121);
+}
+
+#channeltile5 {
+  height: 232px;
+  width: 259px;
+  background-color:rgb(14, 81, 206);
+}
+
+#newsletter {
+  height: 360px;
+  background-color:rgb(4, 61, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#newsletter_headline {
+  height: 50px;
+  background-color:rgb(39, 40, 65);
+}
+
+#newsletter_subheadline {
+  height: 50px;
+  background-color:rgb(32, 35, 41);
+
+}
+
+#newsletter_search {
+  height: 50px;
+  background-color:rgb(188, 216, 142);
+
+}
+
+#newsletter_social {
+  height: 50px;
+  background-color:rgb(216, 162, 137);
+}
+
+#goals {
+  height: 608px;
+  background-color: rgb(165, 188, 202);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#work_with_us_wrapper {
+  height: 327px;
+  background-color: rgb(122, 142, 209);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+#work_with_text {
+  height: 327px;
+  width: 80%;
+  background-color: rgb(122, 127, 145);
+}
+
+#work_with_icons {
+  height: 327px;
+  width: 80%;
+  background-color: rgb(122, 209, 137);
+}
+
+#goals_social {
+  height: 100px;
+  background-color: rgb(130, 175, 109);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#goalicon1 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(14, 81, 206);
+}
+
+#goalicon2 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(206, 123, 14);
+}
+
+#goalicon3 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(36, 206, 14);
+}
+
+#goalicon4 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(206, 14, 196);
+}
+
+#goalicon5 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(143, 212, 78);
+}
+
+#goalicon6 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(189, 96, 60);
+}
+
+#goalicon6 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(61, 146, 35);
+}
+
+#goalicon7 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(206, 14, 164);
+}
+
+#goalicon8 {
+  height: 75%;
+  width: 50px;
+  background-color:rgb(177, 206, 14);
+}
+
+
+#footer {
+  height: 485px;
+  background-color: black;
+}
+
+

@@ -181,51 +181,62 @@
 #channels {
   height: 576px;
   background-color: rgb(83, 172, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #channel_header {
   height: 208px;
+  width: 85%;
   background-color: rgb(197, 100, 100);
 }
 
 #channeltiles {
   height: 375px;
+  width: 85%;
+  display: block;
   background-color: rgb(140, 159, 196);
-  display: flex;
-  justify-content: space-evenly;
   margin-top: 10px;
-
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
-
 #channeltile1 {
-  height: 232px;
+  height: 256px;
   width: 259px;
   background-color:rgb(214, 74, 18);
+  display: inline-block;
 }
 
 #channeltile2 {
-  height: 232px;
+  height: 256px;
   width: 259px;
   background-color:rgb(148, 212, 132);
+  display: inline-block;
 }
 
 #channeltile3 {
-  height: 232px;
+  height: 256px;
   width: 259px;
   background-color:rgb(99, 94, 117);
+  display: inline-block;
 }
 
 #channeltile4 {
-  height: 232px;
+  height: 256px;
   width: 259px;
   background-color:rgb(177, 136, 121);
+  display: inline-block;
 }
 
 #channeltile5 {
-  height: 232px;
+  height: 256px;
   width: 259px;
   background-color:rgb(14, 81, 206);
+  display: inline-block;
 }
 
 #newsletter {
@@ -390,11 +401,133 @@
 }
 
 
-#footer {
+footer {
   height: 485px;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+#main_footer {
+  height: 268px;
+  width: 90%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+#footer_logo {
+width: 620px;
+background-color: blue;
+}
+
+#logo_link {
+  height: 50px;
+  background-color: rgb(134, 51, 51);
+}
+
+#tagline {
+  height: 50px;
+  background-color: rgb(65, 110, 28);
+}
+
+#footer_social {
+  height: 50px;
+  width: 80%;
+  background-color: orange;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footericon1 {
+  width: 50px;
+  background-color: grey;
+}
+
+#footericon2 {
+  width: 50px;
+  background-color: rgb(151, 93, 93);
+}
+
+#footericon3 {
+  width: 50px;
+  background-color: rgb(116, 190, 97);
+}
+
+#footericon4 {
+  width: 50px;
+  background-color: rgb(105, 114, 165);
+}
+
+#footericon5 {
+  width: 50px;
+  background-color: rgb(132, 214, 93);
+}
+
+#footericon6 {
+  width: 50px;
+  background-color: rgb(202, 221, 117);
+}
+
+#footericon7 {
+  width: 50px;
+  background-color: rgb(99, 178, 192);
+}
+
+#footer_more {
+  width: 310px;
+  background-color: rgb(92, 170, 72);
+}
+
+#more_headline {
+  height: 50px;
+  background-color: rgb(67, 45, 119);
+}
+
+.more_list {
+  list-style-type: none;
+}
+
+#footer_about {
+  width: 310px;
+  background-color: rgb(255, 94, 0);
+}
+
+#about_headline {
+  height: 50px;
+  background-color: rgb(57, 119, 45);
+}
+
+.about_list {
+  list-style-type: none;
+}
+
+
+#sub_footer {
+  height: 217px;
+  width: 90%;
+  background-color: rgb(209, 149, 149);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#sub_company {
+  height: 24px;
+  width: 300px;
+  background-color: rgb(112, 185, 70);
+
+}
+
+#sub_copyright {
+  height: 24px;
+  width: 500px;
+  background-color: rgb(156, 46, 46);
+}
 
 @media screen and (max-width: 1023px) {
   
@@ -685,7 +818,7 @@
   }
   
   #work_with_us_wrapper {
-    height: 373px;
+    height: 490px;
     width: 90%;
     background-color: rgb(122, 142, 209);
     display: grid;
@@ -745,75 +878,203 @@
   }
   
   #goals_social {
-    height: 436px;
     width: 85%;
     background-color: rgb(194, 201, 191);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr 1fr ; */
-    /* grid-template-areas:
-    "tile1 tile2 tile3"
-    "tile4 tile5 tile6"
-    "tile7 tile8 ."; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
+    margin-top: 50px;
+    flex: 1 1 auto;
   }
   
   #goalicon1 {
-    grid-area: tile1;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(14, 81, 206);
+    flex: 1 1 auto;
   }
   
   #goalicon2 {
-    grid-area: tile2;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(206, 123, 14);
+    flex: 1 1 auto;
   }
   
   #goalicon3 {
-    grid-area: tile3;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(36, 206, 14);
+    flex: 1 1 auto;
   }
   
   #goalicon4 {
-    grid-area: tile4;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(184, 106, 180);
+    flex: 1 1 auto;
   }
   
   #goalicon5 {
-    grid-area: tile5;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(42, 75, 11);
+    flex: 1 1 auto;
   }
   
   #goalicon6 {
-    grid-area: tile6;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(189, 96, 60);
+    flex: 1 1 auto;
   }
   
   #goalicon7 {
-    grid-area: tile7;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(75, 155, 175);
+    flex: 1 1 auto;
   }
   
   #goalicon8 {
-    grid-area: tile8;
-    height: 137px;
+    height: 33%;
     width: 33%;
     background-color:rgb(177, 206, 14);
+    flex: 1 1 auto;
+  }
+
+  footer {
+    height: 665px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #main_footer {
+    height: 446px;
+    width: 90%;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #footer_logo {
+  height: 178px;
+  width: 100%;
+  background-color: blue;
+  }
+  
+  #logo_link {
+    height: 38px;
+    background-color: rgb(134, 51, 51);
+  }
+  
+  #tagline {
+    height: 36px;
+    background-color: rgb(65, 110, 28);
+  }
+  
+  #footer_social {
+    height: 24px;
+    width: 80%;
+    background-color: orange;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #footericon1 {
+    width: 24px;
+    background-color: grey;
+  }
+  
+  #footericon2 {
+    width: 24px;
+    background-color: rgb(151, 93, 93);
+  }
+  
+  #footericon3 {
+    width: 24px;
+    background-color: rgb(116, 190, 97);
+  }
+  
+  #footericon4 {
+    width: 24px;
+    background-color: rgb(105, 114, 165);
+  }
+  
+  #footericon5 {
+    width: 24px;
+    background-color: rgb(132, 214, 93);
+  }
+  
+  #footericon6 {
+    width: 24px;
+    background-color: rgb(202, 221, 117);
+  }
+  
+  #footericon7 {
+    width: 24px;
+    background-color: rgb(99, 178, 192);
+  }
+  
+  #footer_more {
+    height: 268px;
+    width: 50%;
+    background-color: rgb(92, 170, 72);
+  }
+  
+  #more_headline {
+    height: 50px;
+    background-color: rgb(67, 45, 119);
+  }
+  
+  .more_list {
+    list-style-type: none;
+  }
+  
+  #footer_about {
+    height: 268px;
+    width: 50%;
+    background-color: rgb(255, 94, 0);
+  }
+  
+  #about_headline {
+    height: 50px;
+    background-color: rgb(57, 119, 45);
+  }
+  
+  .about_list {
+    list-style-type: none;
+  }
+  
+  
+  #sub_footer {
+    height: 125px;
+    width: 90%;
+    background-color: rgb(209, 149, 149);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  #sub_company {
+    height: 24px;
+    width: 40%;
+    background-color: rgb(112, 185, 70);
+  
+  }
+  
+  #sub_copyright {
+    height: 24px;
+    width: 50%;
+    background-color: rgb(156, 46, 46);
   }
 }
